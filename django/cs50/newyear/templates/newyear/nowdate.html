@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>what time is it?</title>
+    <link rel="stylesheet" href="{% static 'newyear/css/style.css' %}">
 </head>
 <body>
-    <h1 style="color: cadetblue; text-align: center;">Year:{{year}} | Month:{{month}} | day:{{day}} | time:{{time}}</h1>
+    <h1 class="ny-dt">Year:{{year}} | Month:{{month}} | day:{{day}} | time:{{time}}</h1>
 </body>
 </html>
